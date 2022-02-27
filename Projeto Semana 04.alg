@@ -12,11 +12,6 @@ temperatura, temperaturaFormatada, cotacaoDolar, moeda, moedaFormatada : real
 inicio
 
 escreval("Seja bem vindo ao nosso sistema!")
-escreval()
-escreva("Informe a cotação do dólar: ")
-leia(cotacaoDolar)
-
-limpatela
 
 repita
    escreval()
@@ -66,6 +61,11 @@ repita
       escreval()
    senao
       se ( opcao = "2" ) entao
+         escreva("Informe a cotação do dólar: ")
+         leia(cotacaoDolar)
+         
+         limpatela
+         
          escreval("1 - Converter dólar para real")
          escreval("2 - Converter real para dólar")
          escreva("Informe a opção desejada: ")

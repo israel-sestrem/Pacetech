@@ -1,8 +1,8 @@
 algoritmo "Projeto Semana 05"
-// Função : Converter temperaturas e armazenar seus devidos horários
+// FunÃ§Ã£o : Converter temperaturas e armazenar seus devidos horÃ¡rios
 // Autor : Israel Ricardo Sestrem
 // Data : 04/03/2022
-// Seção de Declarações 
+// SeÃ§Ã£o de DeclaraÃ§Ãµes 
 var
 
 opcao :literal
@@ -16,7 +16,7 @@ inicio
    escreval("1 - Celsius para fahrenheit")
    escreval("2 - Fahrenheit para celsius")
    escreval("3 - Sair")
-   escreva("Escolha a opção desejada: ")
+   escreva("Escolha a opÃ§Ã£o desejada: ")
    leia(opcao)
    limpatela
 fimprocedimento
@@ -28,7 +28,7 @@ inicio
          escreva("Informe a temperatura", i, " em celsius: ")
          leia(temperaturas[i])
          
-         escreva("Informe o horário atual: ")
+         escreva("Informe o horÃ¡rio correspondente: ")
          leia(horarios[i])
          escreval()
       fimpara
@@ -37,7 +37,7 @@ inicio
          escreva("Informe a temperatura", i, " em fahrenheit: ")
          leia(temperaturas[i])
 
-         escreva("Informe o horário atual: ")
+         escreva("Informe o horÃ¡rio correspondente: ")
          leia(horarios[i])
          escreval()
       fimpara
@@ -51,11 +51,11 @@ metodoBolha()
 
 se ( opcao = "1" ) entao
    para i de 1 ate 4 faca
-      escreval("Temperatura", temperaturas[i], "°C, registrada às", horarios[i], "h corresponde a ", ((temperaturas[i] * 1.8) + 32):4:2, "°F")
+      escreval("Temperatura", temperaturas[i], "Â°C, registrada Ã s", horarios[i], "h corresponde a ", ((temperaturas[i] * 1.8) + 32):4:2, "Â°F")
    fimpara
 senao
    para i de 1 ate 4 faca
-      escreval("Temperatura", temperaturas[i], "°F, registrada às", horarios[i], "h corresponde a ", ((temperaturas[i] - 32) / 1.8):4:2, "°C")
+      escreval("Temperatura", temperaturas[i], "Â°F, registrada Ã s", horarios[i], "h corresponde a ", ((temperaturas[i] - 32) / 1.8):4:2, "Â°C")
    fimpara
 fimse
 fimprocedimento
@@ -89,11 +89,11 @@ repita
       caso "3"
       outrocaso
          escreval()
-         escreval("Opção inválida. Tente novamente")
+         escreval("OpÃ§Ã£o invÃ¡lida. Tente novamente")
    fimescolha
 ate opcao = "3"
 
-escreval("Obrigado por utilizar nosso sistema. Até a próxima!")
+escreval("Obrigado por utilizar nosso sistema. AtÃ© a prÃ³xima!")
 fimalgoritmo
 
 

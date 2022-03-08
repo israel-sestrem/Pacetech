@@ -7,7 +7,7 @@ var
 
 opcao :literal
 i, j : inteiro
-aux : real
+aux, aux2 : real
 temperaturas, horarios: vetor[1..4] de real
 
 procedimento menu()
@@ -57,6 +57,9 @@ para i de 1 ate 4 faca
          aux <- temperaturas[i]
          temperaturas[i] <- temperaturas[j]
          temperaturas[j] <- aux
+         aux2 <- horarios[i]
+         horarios[i] <- horarios[j]
+         horarios[j] <- aux2
       fimse
    fimpara
 fimpara

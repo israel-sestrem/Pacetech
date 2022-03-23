@@ -6,11 +6,7 @@ public class Aluno {
     private float notaProva, notaTrabalho;
     private double media;
     
-    public Aluno(String nome, String matricula, float notaProva, float notaTrabalho){
-        this.nome = nome;
-        this.matricula = matricula;
-        this.setNotaProva(notaProva);
-        this.setNotaTrabalho(notaTrabalho);
+    public Aluno(){
     }
 
     public String getNome() {

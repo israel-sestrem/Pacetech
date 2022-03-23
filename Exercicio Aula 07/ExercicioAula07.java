@@ -1,5 +1,6 @@
 package exercicioaula07;
 import java.util.Scanner;
+import javax.swing.JOptionPane;
 
 public class ExercicioAula07 {
 
@@ -9,6 +10,7 @@ public class ExercicioAula07 {
         float notaProva, notaTrabalho;
         
         Scanner leitor = new Scanner(System.in); 
+        JOptionPane mensagem = new JOptionPane();
         
         int i = 2;
         
@@ -27,8 +29,7 @@ public class ExercicioAula07 {
             
             Aluno aluno = new Aluno(nome, matricula, notaProva, notaTrabalho);
             
-            System.out.println("Media de " + aluno.getNome() + ": " + aluno.calcularMedia());
-            System.out.println("");
+            mensagem.showMessageDialog(null, "Media de " + aluno.getNome() + ": " + aluno.calcularMedia());
             
             i--;
         }

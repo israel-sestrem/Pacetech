@@ -17,7 +17,7 @@ public class Formulario extends javax.swing.JFrame {
         initComponents();
     }
 
-    double valor1, valor2;
+    Double valor1, valor2;
     String operacao;
     
     /**
@@ -262,7 +262,7 @@ public class Formulario extends javax.swing.JFrame {
     private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
         
         if ( resultado.getText().equals("") ){
-            valor1 = 0;
+            valor1 = 0d;
         } else { 
             valor1 = Double.parseDouble(resultado.getText());
         }
@@ -349,7 +349,7 @@ public class Formulario extends javax.swing.JFrame {
     private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
         
         if ( resultado.getText().equals("") ){
-            valor1 = 0;
+            valor1 = 0d;
         } else { 
             valor1 = Double.parseDouble(resultado.getText());
         }
@@ -360,8 +360,11 @@ public class Formulario extends javax.swing.JFrame {
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         
+        if ( valor1 == null ){
+            return;
+        }
         if ( resultado.getText().equals("") ){
-            valor2 = 0;
+            valor2 = 0d;
         } else { 
             valor2 = Double.parseDouble(resultado.getText());
         }
@@ -391,7 +394,7 @@ public class Formulario extends javax.swing.JFrame {
     private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton18ActionPerformed
         
         if ( resultado.getText().equals("") ){
-            valor1 = 0;
+            valor1 = 0d;
         } else { 
             valor1 = Double.parseDouble(resultado.getText());
         }
@@ -403,7 +406,7 @@ public class Formulario extends javax.swing.JFrame {
     private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
         
         if ( resultado.getText().equals("") ){
-            valor1 = 0;
+            valor1 = 0d;
         } else { 
             valor1 = Double.parseDouble(resultado.getText());
         }

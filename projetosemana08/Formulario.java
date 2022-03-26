@@ -352,9 +352,12 @@ public class Formulario extends javax.swing.JFrame {
         
         if ( resultado.getText().equals("") ){
             valor1 = 0d;
-        } else { 
-            valor1 = Double.parseDouble(resultado.getText());
+            return;
         }
+        if ( resultado.getText().equals("-") ){
+            return;
+        }
+        valor1 = Double.parseDouble(resultado.getText());
         operacao = "x";
         resultado.setText("");
         
@@ -422,7 +425,7 @@ public class Formulario extends javax.swing.JFrame {
 
     private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
         
-        if ( !(resultado.getText().contains(".")) && !(resultado.getText().equals("")) ){
+        if ( !(resultado.getText().contains(".")) && !(resultado.getText().equals("")) && !(resultado.getText().equals("-")) ){
             resultado.setText(resultado.getText() + ".");
             return;
         }
@@ -441,9 +444,12 @@ public class Formulario extends javax.swing.JFrame {
         
         if ( resultado.getText().equals("") ){
             valor1 = 0d;
-        } else { 
-            valor1 = Double.parseDouble(resultado.getText());
+            return;
         }
+        if ( resultado.getText().equals("-") ){
+            return;
+        }
+        valor1 = Double.parseDouble(resultado.getText());
         operacao = "+";
         resultado.setText("");
         
@@ -480,9 +486,9 @@ public class Formulario extends javax.swing.JFrame {
             case "%":
                 resultado.setText(String.valueOf((valor1 / 100) * valor2));
                 break;
-            case "2":
+            case "√":   
                 break;
-            case "√":
+            case "2":
                 break;
             default:
                 return;
@@ -491,12 +497,15 @@ public class Formulario extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton18ActionPerformed
-        
+ 
         if ( resultado.getText().equals("") ){
-            valor1 = 0d;
-        } else { 
-            valor1 = Double.parseDouble(resultado.getText());
+            resultado.setText("-");
+            return;
         }
+        if ( resultado.getText().equals("-") ){
+            return;
+        }
+        valor1 = Double.parseDouble(resultado.getText());
         operacao = "-";
         resultado.setText("");
         
@@ -506,9 +515,12 @@ public class Formulario extends javax.swing.JFrame {
    
         if ( resultado.getText().equals("") ){
             valor1 = 0d;
-        } else { 
-            valor1 = Double.parseDouble(resultado.getText());
+            return;
         }
+        if ( resultado.getText().equals("-") ){
+            return;
+        }
+        valor1 = Double.parseDouble(resultado.getText());
         operacao = "/";
         resultado.setText(""); 
         
@@ -518,9 +530,12 @@ public class Formulario extends javax.swing.JFrame {
         
         if ( resultado.getText().equals("") ){
             valor1 = 0d;
-        } else {
-            valor1 = Double.parseDouble(resultado.getText());
+            return;
         }
+        if ( resultado.getText().equals("-") ){
+            return;
+        }
+        valor1 = Double.parseDouble(resultado.getText());
         operacao = "%";
         resultado.setText("");
         
@@ -531,8 +546,16 @@ public class Formulario extends javax.swing.JFrame {
         if ( resultado.getText().equals("") ){
             return;
         }
+        if ( resultado.getText().equals("-") ){
+            return;
+        }
         operacao = "√";
         valor1 = Double.parseDouble(resultado.getText());
+        if ( valor1 < 0 ){
+            JOptionPane.showMessageDialog(rootPane, "Impossível tirar raiz de número negativo");
+            resultado.setText("");
+            return;
+        }
         resultado.setText(String.valueOf(Math.sqrt(valor1)));
         
     }//GEN-LAST:event_jButton21ActionPerformed
@@ -540,6 +563,9 @@ public class Formulario extends javax.swing.JFrame {
     private void jButton22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton22ActionPerformed
         
         if ( resultado.getText().equals("") ){
+            return;
+        }
+        if ( resultado.getText().equals("-") ){
             return;
         }
         operacao = "2";

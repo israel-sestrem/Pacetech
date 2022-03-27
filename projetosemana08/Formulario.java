@@ -20,7 +20,7 @@ public class Formulario extends javax.swing.JFrame {
     }
 
     Double valor1, valor2;
-    String operacao;
+    String operacao = "";
     
     /**
      * This method is called from within the constructor to initialize the form.
@@ -352,6 +352,7 @@ public class Formulario extends javax.swing.JFrame {
         
         if ( resultado.getText().equals("") ){
             valor1 = 0d;
+            operacao = "x";
             return;
         }
         if ( resultado.getText().equals("-") ){
@@ -434,8 +435,8 @@ public class Formulario extends javax.swing.JFrame {
 
     private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton19ActionPerformed
         
-        valor1 = 0d;
-        valor2 = 0d;
+        valor1 = null;
+        valor2 = null;
         resultado.setText("");
         
     }//GEN-LAST:event_jButton19ActionPerformed
@@ -444,6 +445,7 @@ public class Formulario extends javax.swing.JFrame {
         
         if ( resultado.getText().equals("") ){
             valor1 = 0d;
+            operacao = "+";
             return;
         }
         if ( resultado.getText().equals("-") ){
@@ -515,6 +517,7 @@ public class Formulario extends javax.swing.JFrame {
    
         if ( resultado.getText().equals("") ){
             valor1 = 0d;
+            operacao = "/";
             return;
         }
         if ( resultado.getText().equals("-") ){
@@ -530,6 +533,7 @@ public class Formulario extends javax.swing.JFrame {
         
         if ( resultado.getText().equals("") ){
             valor1 = 0d;
+            operacao = "%";
             return;
         }
         if ( resultado.getText().equals("-") ){

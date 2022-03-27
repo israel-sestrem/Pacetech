@@ -357,6 +357,11 @@ public class Formulario extends javax.swing.JFrame {
         if ( resultado.getText().equals("-") ){
             return;
         }
+        if ( operacao != null && operacao.equals("x") ){
+            resultado.setText(String.valueOf(valor1 * Double.parseDouble(resultado.getText())));
+            valor1 = Double.parseDouble(resultado.getText());
+            return;
+        }
         valor1 = Double.parseDouble(resultado.getText());
         operacao = "x";
         resultado.setText("");
@@ -365,60 +370,150 @@ public class Formulario extends javax.swing.JFrame {
 
     private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
         
+        if ( operacao != null ){
+            if ( operacao.equals("+") || operacao.equals("-") || operacao.equals("x") || operacao.equals("/") ){
+                if ( !(resultado.getText().equals("")) ){
+                    if ( resultado.getText().equals(String.valueOf(valor1)) ){
+                        resultado.setText("");
+                    }     
+                }
+            }
+        }
         resultado.setText(resultado.getText() + "0");
         
     }//GEN-LAST:event_jButton12ActionPerformed
 
     private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
         
+        if ( operacao != null ){
+            if ( operacao.equals("+") || operacao.equals("-") || operacao.equals("x") || operacao.equals("/") ){
+                if ( !(resultado.getText().equals("")) ){
+                    if ( resultado.getText().equals(String.valueOf(valor1)) ){
+                        resultado.setText("");
+                    }     
+                }
+            }
+        }
         resultado.setText(resultado.getText() + "1");
         
     }//GEN-LAST:event_jButton11ActionPerformed
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
         
+        if ( operacao != null ){
+            if ( operacao.equals("+") || operacao.equals("-") || operacao.equals("x") || operacao.equals("/") ){
+                if ( !(resultado.getText().equals("")) ){
+                    if ( resultado.getText().equals(String.valueOf(valor1)) ){
+                        resultado.setText("");
+                    }     
+                }
+            }
+        }
         resultado.setText(resultado.getText() + "2");
         
     }//GEN-LAST:event_jButton9ActionPerformed
 
     private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
         
+        if ( operacao != null ){
+            if ( operacao.equals("+") || operacao.equals("-") || operacao.equals("x") || operacao.equals("/") ){
+                if ( !(resultado.getText().equals("")) ){
+                    if ( resultado.getText().equals(String.valueOf(valor1)) ){
+                        resultado.setText("");
+                    }     
+                }
+            }
+        }
         resultado.setText(resultado.getText() + "3");
         
     }//GEN-LAST:event_jButton10ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         
+        if ( operacao != null ){
+            if ( operacao.equals("+") || operacao.equals("-") || operacao.equals("x") || operacao.equals("/") ){
+                if ( !(resultado.getText().equals("")) ){
+                    if ( resultado.getText().equals(String.valueOf(valor1)) ){
+                        resultado.setText("");
+                    }     
+                }
+            }
+        }
         resultado.setText(resultado.getText() + "4");
         
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
         
+        if ( operacao != null ){
+            if ( operacao.equals("+") || operacao.equals("-") || operacao.equals("x") || operacao.equals("/") ){
+                if ( !(resultado.getText().equals("")) ){
+                    if ( resultado.getText().equals(String.valueOf(valor1)) ){
+                        resultado.setText("");
+                    }     
+                }
+            }
+        }
         resultado.setText(resultado.getText() + "5");
         
     }//GEN-LAST:event_jButton8ActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
         
+        if ( operacao != null ){
+            if ( operacao.equals("+") || operacao.equals("-") || operacao.equals("x") || operacao.equals("/") ){
+                if ( !(resultado.getText().equals("")) ){
+                    if ( resultado.getText().equals(String.valueOf(valor1)) ){
+                        resultado.setText("");
+                    }     
+                }
+            }
+        }
         resultado.setText(resultado.getText() + "6");
         
     }//GEN-LAST:event_jButton6ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         
+        if ( operacao != null ){
+            if ( operacao.equals("+") || operacao.equals("-") || operacao.equals("x") || operacao.equals("/") ){
+                if ( !(resultado.getText().equals("")) ){
+                    if ( resultado.getText().equals(String.valueOf(valor1)) ){
+                        resultado.setText("");
+                    }     
+                }
+            }
+        }
         resultado.setText(resultado.getText() + "7");
         
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         
+        if ( operacao != null ){
+            if ( operacao.equals("+") || operacao.equals("-") || operacao.equals("x") || operacao.equals("/") ){
+                if ( !(resultado.getText().equals("")) ){
+                    if ( resultado.getText().equals(String.valueOf(valor1)) ){
+                        resultado.setText("");
+                    }     
+                }
+            }
+        }
         resultado.setText(resultado.getText() + "8");
         
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         
+        if ( operacao != null ){
+            if ( operacao.equals("+") || operacao.equals("-") || operacao.equals("x") || operacao.equals("/") ){
+                if ( !(resultado.getText().equals("")) ){
+                    if ( resultado.getText().equals(String.valueOf(valor1)) ){
+                        resultado.setText("");
+                    }     
+                }
+            }
+        }
         resultado.setText(resultado.getText() + "9");
         
     }//GEN-LAST:event_jButton2ActionPerformed
@@ -447,6 +542,11 @@ public class Formulario extends javax.swing.JFrame {
             return;
         }
         if ( resultado.getText().equals("-") ){
+            return;
+        }     
+        if ( operacao != null && operacao.equals("+") ){
+            resultado.setText(String.valueOf(valor1 + Double.parseDouble(resultado.getText())));
+            valor1 = Double.parseDouble(resultado.getText());
             return;
         }
         valor1 = Double.parseDouble(resultado.getText());
@@ -493,6 +593,7 @@ public class Formulario extends javax.swing.JFrame {
             default:
                 return;
         }
+        operacao = "";
         
     }//GEN-LAST:event_jButton3ActionPerformed
 
@@ -503,6 +604,11 @@ public class Formulario extends javax.swing.JFrame {
             return;
         }
         if ( resultado.getText().equals("-") ){
+            return;
+        }
+        if ( operacao != null && operacao.equals("-") ){
+            resultado.setText(String.valueOf(valor1 - Double.parseDouble(resultado.getText())));
+            valor1 = Double.parseDouble(resultado.getText());
             return;
         }
         valor1 = Double.parseDouble(resultado.getText());
@@ -518,6 +624,11 @@ public class Formulario extends javax.swing.JFrame {
             return;
         }
         if ( resultado.getText().equals("-") ){
+            return;
+        }
+        if ( operacao != null && operacao.equals("/") ){
+            resultado.setText(String.valueOf(valor1 / Double.parseDouble(resultado.getText())));
+            valor1 = Double.parseDouble(resultado.getText());
             return;
         }
         valor1 = Double.parseDouble(resultado.getText());
